@@ -10,7 +10,7 @@
   "description": "The SendSafely JavaScript SDK for Node.js lets you integrate SendSafely secure data transfer capabilities directly into your Node.js application.",
   "dependencies": {
     "jquery": "^3.4.1",
-    "openpgp": "^4.10.0",
+    "openpgp": "^4.10.1",
     "sjcl": "^1.0.8",
     "window": "^4.2.5",
     "xmlhttprequest": "^1.8.0"
