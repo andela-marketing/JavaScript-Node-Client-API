@@ -169,7 +169,7 @@ function typedArrayToUnicodeString(ua) {
 async function pgpDecryptMessage(encryptedString, passphrase, callback)
 {
     var options = {
-            message: await openpgp.message.read(encryptedString), // input as Uint8Array (or String)
+            message: await openpgp.readMessage({ binaryMessage: encryptedString }), // input as Uint8Array (or String)
             passwords: [passphrase],              // multiple passwords possible
             format: 'binary'
         };
