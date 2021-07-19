@@ -1251,7 +1251,6 @@ function Executor(eventHandler) {
 
   this.handleError = function(err, errorMessage) {
     myself.eventHandler.raiseError('UNHANDLED_EXCEPTION', {message: errorMessage, stacktrace: err});
-    console.log(err);
     throw err;
   };
 
